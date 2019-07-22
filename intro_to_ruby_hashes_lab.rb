@@ -18,18 +18,15 @@ def id_generator
 	newHash = {
 		:id => 2
 	}
-  # return a hash with a key :id assigned to positive integer
 end
 
 def my_hash_creator(key, value)
 	newHash = {}
 	newHash[key] = value
-  # return a hash that includes the key and value parameters passed into this method
 end
 
 def read_from_hash(hash, key)
 	hash[key]
-  # return the correct value using the hash and key parameters
 end
 
 def update_counting_hash(hash, key)
@@ -38,4 +35,5 @@ def update_counting_hash(hash, key)
 	else
 		hash[key] = 1
 	end
+	hash
 end
